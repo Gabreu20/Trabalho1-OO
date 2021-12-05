@@ -20,6 +20,8 @@ import com.google.gson.Gson;
 public class locadora {
     public static void main(String[] args) throws FileNotFoundException {
 
+        var gson = new Gson();
+
         int controle = 0;
         File arquivo = new File("data.txt");
         Scanner leitura = new Scanner(arquivo);
