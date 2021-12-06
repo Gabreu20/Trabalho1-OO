@@ -7,15 +7,13 @@ public class carro {
     String marca;
     String cor;
     float kmAndado;
-    int[] dataRetorno = new int[3];
+    String dataRetorno;
     float preco;
     Boolean disponivel;
     
-    public carro(String PLACA, String MARCA, String COR, float KMANDADO, int[] DATARETORNO, float PRECO, Boolean DISPONIVEL){
+    public carro(String PLACA, String MARCA, String COR, float KMANDADO, String DATARETORNO, float PRECO, Boolean DISPONIVEL){
         placa = PLACA; marca = MARCA; cor = COR; kmAndado = KMANDADO; 
-        for(int i = 0; i < dataRetorno.length; i++){
-            dataRetorno[i] = DATARETORNO[i];
-        }
+        dataRetorno = DATARETORNO;
         preco = PRECO; disponivel = DISPONIVEL;
     }
     

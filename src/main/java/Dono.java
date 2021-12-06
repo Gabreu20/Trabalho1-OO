@@ -143,7 +143,7 @@ public class Dono {
     }
     
     public carro comprarCarro(String PLACA, String MARCA, String COR, float KMANDADO
-            , int[] DATARETORNO, float PRECO, Boolean DISPONIVEL, float precoCarro){
+            , String DATARETORNO, float PRECO, Boolean DISPONIVEL, float precoCarro){
                 if(precoCarro < saldoCompanhia){
                     saldoCompanhia -= precoCarro;
                     carro car = new carro(PLACA, MARCA, COR, KMANDADO, DATARETORNO, PRECO, DISPONIVEL);
